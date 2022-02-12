@@ -15,7 +15,7 @@
     <form action="./index.php?menuop=atualizarPessoa" method="post">
     <div>
         <label for="IdContato">Identificação</label>
-        <input type="text" name="Nome" value=" <?= $data["IdContato"] ?> "disabled>
+        <input type="text" name="IdContato" value=" <?= $data["IdContato"] ?>" readonly>
     </div>
     <div>
         <label for="Nome">Nome</label>
@@ -25,6 +25,7 @@
         <label for="Telefone">Telefone</label>
         <input type="text" name="Telefone" value=" <?= $data["Telefone"] ?>">
     </div>
+
     <div>
         <input type="submit" value="Atualizar" nome="Atualizar">
     </div>
